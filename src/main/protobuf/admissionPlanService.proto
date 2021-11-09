@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "true";
+option java_outer_classname = "AdmissionPlanAPIProto";
+option objc_class_prefix = "RTG";
+
+package grpc;
+
+service AdmissionPlanAPI{
+  rpc CheckAbiturientRequest(AbiturientRequest) returns (AdmissionPlanResponse) {}
+}
+
+message AbiturientRequest {
+  string fio = 1;
+}
+
+message AdmissionPlanResponse {
+  int32 status = 1;
+}

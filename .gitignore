@@ -1,0 +1,12 @@
+.idea
+.bloop
+.bsp
+.metals
+.vscode
+.scalafmt.conf
+project/target
+project/metals.sbt
+project/project
+project/.bloop
+target
+.env
